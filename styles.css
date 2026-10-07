@@ -114,7 +114,7 @@ img {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: url('unicas_fotos/52.webp') center / cover no-repeat, var(--negro);
+    background: var(--negro);
 }
 
 .hero-video {
