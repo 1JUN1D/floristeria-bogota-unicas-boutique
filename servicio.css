@@ -1,0 +1,314 @@
+/* ==========================================================
+   Únicas Boutique Floral — páginas de servicio
+   Paleta y tipografía de catalogo.html
+   ========================================================== */
+.service-hero {
+    min-height: 50vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(192, 137, 196, 0.6)), url('unicas_fotos/24.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 3rem 20px;
+}
+
+.service-hero-content h1 {
+    color: #EABE81;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.service-content {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fff, #f8f9fa);
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section h2,
+.pricing-section h2,
+.areas-section h2 {
+    font-size: 2rem;
+    color: #C089C4;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.content-section h2::after,
+.pricing-section h2::after,
+.areas-section h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    margin-top: 0.6rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #C089C4, #EABE81);
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.benefits-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.benefit-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(192, 137, 196, 0.1);
+    border-left: 4px solid #EABE81;
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    border-left-color: #C089C4;
+    box-shadow: 0 15px 35px rgba(192, 137, 196, 0.16);
+}
+
+.benefit-item h3 {
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.pricing-section {
+    background: #faf5ff;
+    border: 1px solid #e9d8f5;
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.price-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(192, 137, 196, 0.1);
+}
+
+.price-item h4 {
+    color: #C089C4;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.price {
+    color: #EABE81;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.price-item p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.areas-section {
+    background: #000;
+    padding: 2rem;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.areas-section h2 {
+    color: #EABE81;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.area-item {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(234, 190, 129, 0.35);
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.area-item:hover {
+    background: #C089C4;
+    border-color: #C089C4;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #C089C4, #d4a6d8);
+    color: #fff;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    margin: 3rem 0;
+    box-shadow: 0 15px 40px rgba(192, 137, 196, 0.25);
+}
+
+.cta-section h2 {
+    color: #000;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-button-large {
+    background: #000;
+    color: #EABE81;
+    border: 2px solid #000;
+    padding: 18px 50px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cta-button-large:hover {
+    background: #EABE81;
+    color: #000;
+    border-color: #EABE81;
+    transform: translateY(-3px);
+}
+
+.breadcrumb {
+    background: #faf5ff;
+    border-bottom: 1px solid #e9d8f5;
+    padding: 15px 0;
+    margin-top: 76px;
+}
+
+.breadcrumb-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-nav a {
+    color: #a06fa4;
+    text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+    color: #b8860b;
+}
+
+.breadcrumb-nav span {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .service-hero {
+        min-height: 40vh;
+    }
+
+    .content-section h2,
+    .pricing-section h2,
+    .areas-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-section p {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .benefits-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-section,
+    .areas-section {
+        padding: 1.5rem;
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-section {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+    }
+
+    .cta-button-large {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+}

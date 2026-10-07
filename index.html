@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únicas Boutique Floral - Florería en Bogotá | Flores Frescas y Secas</title>
+    <meta name="description"
+        content="Únicas Boutique Floral - La mejor florería de Bogotá. Flores frescas, secas, regalos y entrega a domicilio. Mayoristas y minoristas.">
+    <link rel="shortcut icon" href="unicas_fotos/logo.jpeg" type="image/jpeg">
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Únicas Boutique Floral",
+        "image": "unicas_fotos/logo.jpeg",
+        "@id": "https://unicasboutiquefloral.dondeseria.com",
+        "url": "https://unicasboutiquefloral.dondeseria.com",
+        "telephone": "+57 322 700 8625",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Cra 70G #102-30",
+            "addressLocality": "Bogotá",
+            "addressRegion": "Bogotá D.C.",
+            "addressCountry": "CO"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 4.6979997,
+            "longitude": -74.0762246
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday", 
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    </script>
+
+    <link rel="canonical" href="https://unicasboutiquefloral.dondeseria.com/">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1442573450767869');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1442573450767869&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1WV5B608"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LS1WV5B608');          // Analytics
+        // Google Ads
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17503274952">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-17503274952');
+    </script>
+
+    <!-- FUNCIÓN DE TRACKING WHATSAPP PARA GOOGLE ADS -->
+    <script>
+        function trackWhatsAppLead(whatsappUrl, eventLabel) {
+            try {
+                // Registrar conversión en Google Ads
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-17503274952/lA9PCODAu4wbEMiPm5pB',
+                    'event_callback': function () {
+                        console.log('Tracking exitoso, abriendo WhatsApp...');
+                        window.open(whatsappUrl, '_blank');
+                    }
+                });
+
+                // Backup: si el callback falla, abre WhatsApp después de 300ms
+                setTimeout(function () {
+                    window.open(whatsappUrl, '_blank');
+                }, 300);
+
+            } catch (error) {
+                console.error('Error en tracking:', error);
+                window.open(whatsappUrl, '_blank');
+            }
+            return false;
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Navigation -->
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="unicas_fotos/logo.jpeg" alt="Únicas Boutique Floral">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="flores-a-domicilio-bogota.html">Flores a Domicilio</a></li>
+                <li><a href="ramos-de-flores-bogota.html">Ramos de Flores</a></li>
+                <li><a href="https://wa.me/573227008625" target="_blank">WhatsApp</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Florería Premium en Bogotá</h1>
+            <p class="hero-subtitle">Convertimos cada ocasión en un momento único con las flores más hermosas</p>
+            <button class="cta-button"
+                onclick="return trackWhatsAppLead('https://wa.me/573227008625?text=Hola, quiero hacer un pedido de flores', 'hero_button')">
+                Hacer Pedido
+            </button>
+            <a href="catalogo.html" class="cta-button catalog-btn">
+                
+                Ver Catálogo
+                
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Cards -->
+    <section class="products">
+        <div class="container">
+            <p class="section-title">Nuestros Productos Destacados</p>
+            <div class="cards-grid">
+                <div class="product-card">
+                    <div class="product-badge">Más Vendido</div>
+                    <div class="product-image">
+                        <img src="unicas_fotos/58.webp" alt="Corona Imperial - Únicas Boutique Floral Bogotá" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <p class="product-name">Corona Imperial</p>
+                        <p class="product-description">Hermoso bouquet de rosas con apliques de mariposa y corona con imitación diamantes, cinta mensaje personalizado. Decorado con papeles coreanos. Incluye tarjeta dedicatoria. Colores a elección del cliente.</p>
+                        <p class="product-price">Desde $296.875</p>
+                        <button class="order-btn"
+                            onclick="return trackWhatsAppLead('https://wa.me/573227008625?text=Hola, me interesa el Corona Imperial (desde $296.875). ¿Podrías darme más información?', 'corona_imperial')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Más Vendido</div>
+                    <div class="product-image">
+                        <img src="unicas_fotos/54.webp" alt="Combo Irresistible - Únicas Boutique Floral Bogotá" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <p class="product-name">Combo Irresistible</p>
+                        <p class="product-description">Hermoso bouquet con rosas, girasoles y Chocolates Ferrero, variedad de follajes según stock, decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria. Colores de rosas varía a elección.</p>
+                        <p class="product-price">Desde $209.375</p>
+                        <button class="order-btn"
+                            onclick="return trackWhatsAppLead('https://wa.me/573227008625?text=Hola, me interesa el Combo Irresistible (desde $209.375). ¿Podrías darme más información?', 'combo_irresistible')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge">Más Vendido</div>
+                    <div class="product-image">
+                        <img src="unicas_fotos/10.webp" alt="Fusión Solar - Únicas Boutique Floral Bogotá" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <p class="product-name">Fusión Solar</p>
+                        <p class="product-description">Hermoso bouquet con girasoles y rosas, variedad de follajes acorde según stock, decorado con papel coreano y lazo de satín. Incluye tarjeta dedicatoria. Color de las rosas a elección del cliente.</p>
+                        <p class="product-price">Desde $115.625</p>
+                        <button class="order-btn"
+                            onclick="return trackWhatsAppLead('https://wa.me/573227008625?text=Hola, me interesa el Fusión Solar (desde $115.625). ¿Podrías darme más información?', 'fusion_solar')">
+                            Pedir Ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Collage -->
+    <section class="gallery">
+        <div class="container">
+            <p class="section-title">Galería de Nuestros Trabajos</p>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="unicas_fotos/1.webp" alt="Arreglo floral 1 - Únicas Boutique Floral" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="unicas_fotos/17.webp" alt="Arreglo floral 2 - Únicas Boutique Floral" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="unicas_fotos/22.webp" alt="Arreglo floral 3 - Únicas Boutique Floral" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="unicas_fotos/33.webp" alt="Arreglo floral 4 - Únicas Boutique Floral" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="unicas_fotos/47.webp" alt="Arreglo floral 5 - Únicas Boutique Floral" loading="lazy">
+                </div>
+                <div class="photo-item">
+                    <img src="unicas_fotos/55.webp" alt="Arreglo floral 6 - Únicas Boutique Floral" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-item">
+                    <h2>Tienda de Flores Secas</h2>
+                    <p>Conoce nuestra colección exclusiva de flores secas, ideales para una decoración elegante y duradera. Estas flores conservan su belleza natural durante mucho más tiempo y son perfectas para casas, oficinas y eventos especiales. Seleccionamos cada pieza con cuidado y la tratamos con métodos artesanales que respetan sus colores y formas, para crear arreglos únicos que no necesitan mantenimiento y le dan un aire sofisticado a cualquier espacio.</p>
+                    <button class="service-btn" onclick="window.open('tienda-flores-secas-bogota.html', '_self')">Ver
+                        Más</button>
+                </div>
+                <div class="service-image">
+                    <img src="unicas_fotos/51.webp" alt="Flores Secas" loading="lazy">
+                </div>
+            </div>
+
+            <div class="services-grid reverse">
+                <div class="service-image">
+                    <img src="unicas_fotos/26.webp" alt="Mayorista" loading="lazy">
+                </div>
+                <div class="service-item">
+                    <h2>Florería Mayorista</h2>
+                    <p>Somos un proveedor de confianza para grandes eventos, matrimonios, celebraciones empresariales y otros floristas. Manejamos precios especiales por volumen y una amplísima variedad de flores frescas, tanto nacionales como importadas. El servicio mayorista incluye asesoría personalizada, entregas programadas y flexibilidad para pedidos grandes. Trabajamos con los mejores cultivadores de la Sabana de Bogotá para asegurar frescura y calidad en cada despacho, ajustándonos a lo que necesita cada cliente mayorista.</p>
+                    <button class="service-btn" onclick="window.open('floreria-mayorista-bogota.html', '_self')">Ver
+                        Más</button>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <h2>Tienda de Regalos</h2>
+                    <p>Dale un plus a tus flores con los regalos especiales que tenemos para ti: chocolates gourmet, velas aromáticas, peluches, globos temáticos y accesorios decorativos únicos. Escogemos cada detalle pensando en crear momentos emotivos que se recuerden. Tenemos alternativas para cualquier ocasión: cumpleaños, aniversarios, San Valentín, Día de la Madre y otras fechas especiales. Nuestro equipo te acompaña para armar el combo ideal que diga justo lo que quieres expresar.</p>
+                    <button class="service-btn" onclick="window.open('tienda-regalos-bogota.html', '_self')">Ver
+                        Más</button>
+                </div>
+                <div class="service-image">
+                    <img src="unicas_fotos/54.webp" alt="Regalos" loading="lazy">
+                </div>
+            </div>
+
+            <div class="services-grid reverse">
+                <div class="service-image">
+                    <img src="unicas_fotos/24.webp" alt="Entrega" loading="lazy">
+                </div>
+                <div class="service-item">
+                    <h2>Entrega de Flores</h2>
+                    <p>Llevamos tus flores de forma rápida y segura a todas las localidades de Bogotá. Nuestro equipo se encarga de que lleguen impecables y justo cuando las necesitas. Si haces tu pedido antes de las 3:00 p. m., lo entregamos el mismo día en 2 a 4 horas; también programamos entregas para fechas especiales y tenemos servicio express para urgencias. El domicilio cuesta entre $8.000 y $15.000 según la zona e incluye seguimiento en tiempo real y foto de confirmación al recibir.</p>
+                    <button class="service-btn" onclick="window.open('entrega-flores-bogota.html', '_self')">Ver
+                        Más</button>
+                </div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-item">
+                    <h2>Tienda de Canastas de Regalos</h2>
+                    <p>Diseñamos canastas temáticas para sorprender en cada fecha especial. Unimos flores frescas o secas con productos gourmet, vinos seleccionados, chocolates artesanales, fruta fresca y accesorios únicos. Personalizamos cada canasta según la ocasión y el presupuesto, desde propuestas corporativas elegantes hasta opciones románticas e íntimas. Nuestro equipo de diseño arma presentaciones espectaculares que impresionan desde el primer instante, ideales como regalo empresarial, para celebraciones en familia o para un gesto romántico especial.</p>
+                    <button class="service-btn" onclick="window.open('tienda-canasta-regalos-bogota.html', '_self')">Ver
+                        Más</button>
+                </div>
+                <div class="service-image">
+                    <img src="unicas_fotos/29.webp" alt="Canastas" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section class="location">
+        <div class="container">
+            <p class="section-title">Ubicación</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.413515606484!2d-74.0762246!3d4.6979997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b8d58795c2f%3A0x7b5defb64bcb9e5!2sFloristeria%20Bogota%20-%20Unicas%20Boutique%20Floral!5e0!3m2!1ses-419!2sco!4v1791390592179!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Ubicación de Únicas Boutique Floral en Bogotá"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-brand">Únicas Boutique Floral</p>
+                <p class="footer-address">Cra 70G #102-30, Bogotá</p>
+                <p class="footer-year">2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="#" onclick="return trackWhatsAppLead('https://wa.me/573227008625', 'floating_button')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488" />
+            </svg>
+        </a>
+    </div>
+
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

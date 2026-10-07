@@ -1,0 +1,1193 @@
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo - Únicas Boutique | Ramos y Bouquets en Bogotá</title>
+<meta name="description" content="Catálogo completo de ramos y bouquets de Únicas Boutique en Bogotá. Rosas, gerberas, hortensias, arreglos fúnebres y más con entrega a domicilio.">
+<link rel="shortcut icon" href="assets/unicas-logo.png" type="image/x-icon">
+<!-- Meta Pixel Code -->
+<script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1442573450767869');fbq('track','PageView');</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1442573450767869&ev=PageView&noscript=1"/></noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LS1WV5B608"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-LS1WV5B608');</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17503274952"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','AW-17503274952');</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Georgia','Times New Roman',serif;line-height:1.6;color:#333;background:linear-gradient(135deg,#f8f9fa,#fff)}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.header{background:#000;padding:2rem 0;text-align:center}
+.header h1{color:#EABE81;font-size:clamp(2.5rem,5vw,4rem);font-weight:bold;text-shadow:2px 2px 4px rgba(0,0,0,.3);margin-bottom:.5rem}
+.header p{color:#fff;font-size:clamp(1rem,2.5vw,1.3rem);opacity:.9;font-style:italic}
+.filter-section{padding:2rem 0 1rem}
+.search-wrapper{max-width:600px;margin:0 auto 1.5rem;position:relative}
+.search-input{width:100%;padding:14px 50px 14px 50px;border:2px solid #C089C4;border-radius:30px;font-size:1rem;font-family:Arial,sans-serif;background:#fff;color:#333;outline:none;transition:all .3s ease;box-shadow:0 4px 15px rgba(192,137,196,.1)}
+.search-input:focus{border-color:#EABE81;box-shadow:0 4px 20px rgba(234,190,129,.25)}
+.search-input::placeholder{color:#999;font-style:italic}
+.search-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#C089C4;pointer-events:none}
+.search-clear{position:absolute;right:15px;top:50%;transform:translateY(-50%);background:#C089C4;color:#fff;border:none;width:28px;height:28px;border-radius:50%;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:1rem;font-weight:bold;font-family:Arial,sans-serif;transition:all .2s ease}
+.search-clear:hover{background:#a06fa4;transform:translateY(-50%) scale(1.1)}
+.search-clear.visible{display:flex}
+.search-info{text-align:center;font-family:Arial,sans-serif;font-size:.9rem;color:#666;margin-top:.5rem;min-height:20px}
+.search-info strong{color:#C089C4}
+.filter-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-bottom:1rem}
+.filter-btn{background:#fff;color:#C089C4;border:2px solid #C089C4;padding:10px 20px;border-radius:25px;cursor:pointer;font-weight:500;transition:all .3s ease;font-size:.9rem;text-transform:uppercase;letter-spacing:.5px;font-family:'Georgia','Times New Roman',serif}
+.filter-btn:hover,.filter-btn.active{background:#C089C4;color:#fff;transform:translateY(-2px);box-shadow:0 4px 15px rgba(192,137,196,.3)}
+.catalog{padding:30px 0 80px}
+.no-results{display:none;text-align:center;padding:4rem 1rem;color:#666;font-size:1.2rem;font-family:Arial,sans-serif}
+.no-results h3{color:#C089C4;font-size:1.5rem;margin-bottom:.5rem;font-family:'Georgia','Times New Roman',serif}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:3rem;margin-top:2rem}
+.product-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 15px 40px rgba(192,137,196,.1);transition:all .3s ease;position:relative;animation:fadeInUp .6s ease-out}
+.product-card:hover{transform:translateY(-10px);box-shadow:0 25px 50px rgba(192,137,196,.15)}
+.product-image{width:100%;height:300px;overflow:hidden;position:relative}
+.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.product-card:hover .product-image img{transform:scale(1.05)}
+.product-content{padding:2rem}
+.product-code{display:inline-block;background:#000;color:#EABE81;padding:4px 12px;border-radius:6px;font-size:.75rem;font-weight:bold;letter-spacing:1px;font-family:'Courier New',monospace;margin-bottom:.8rem;text-transform:uppercase}
+.product-title{font-size:1.8rem;font-weight:bold;color:#C089C4;margin-bottom:1rem;text-align:center}
+.product-description{font-size:1.1rem;color:#666;line-height:1.6;text-align:center;margin-bottom:1.5rem;min-height:60px}
+.product-sizes{background:#faf5ff;border:1px solid #e9d8f5;border-radius:10px;padding:1rem;margin-bottom:1.5rem}
+.product-sizes h4{color:#C089C4;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px;margin-bottom:.6rem;font-family:Arial,sans-serif;font-weight:bold}
+.product-sizes ul{list-style:none;padding:0}
+.product-sizes ul li{font-size:.9rem;color:#555;padding:4px 0;font-family:Arial,sans-serif;display:flex;justify-content:space-between;border-bottom:1px dotted #f0e0f8}
+.product-sizes ul li:last-child{border-bottom:none}
+.size-label{color:#444}
+.size-price{color:#b8860b;font-weight:bold}
+.product-price{font-size:2.2rem;font-weight:bold;color:#EABE81;text-align:center;margin-bottom:1.5rem;text-shadow:1px 1px 2px rgba(0,0,0,.1)}
+.product-button{width:100%;background:linear-gradient(135deg,#C089C4,#d4a6d8);color:#fff;border:none;padding:15px 0;font-size:1.1rem;font-weight:bold;border-radius:12px;cursor:pointer;transition:all .3s ease;text-transform:uppercase;letter-spacing:1px;font-family:'Georgia','Times New Roman',serif}
+.product-button:hover{background:linear-gradient(135deg,#d4a6d8,#C089C4);transform:scale(1.02);box-shadow:0 5px 15px rgba(192,137,196,.3)}
+.category-badge{position:absolute;top:15px;right:15px;background:rgba(192,137,196,.9);color:#fff;padding:5px 12px;border-radius:15px;font-size:.8rem;font-weight:bold;text-transform:uppercase;letter-spacing:.5px;font-family:'Georgia','Times New Roman',serif}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;z-index:1000}
+.whatsapp-float a{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:#25d366;color:#fff;border-radius:50%;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.3);transition:all .3s ease}
+.whatsapp-float a:hover{transform:scale(1.1)}
+.decorative-line{width:100px;height:3px;background:linear-gradient(90deg,#C089C4,#EABE81);margin:2rem auto;border-radius:2px}
+@media(max-width:768px){.filter-buttons{gap:.5rem}.filter-btn{padding:8px 16px;font-size:.8rem}.products-grid{grid-template-columns:1fr;gap:2rem}.product-card{margin:0 10px}.product-image{height:250px}.product-content{padding:1.5rem}.product-title{font-size:1.5rem}.product-price{font-size:1.8rem}.search-input{font-size:.95rem;padding:12px 45px}}
+@media(max-width:480px){.catalog{padding:20px 0 60px}.container{padding:0 15px}.search-wrapper{margin-bottom:1rem}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* === LIGHTBOX (visualizador de imagen completa) === */
+.product-image { cursor: zoom-in; }
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    animation: lightboxFadeIn 0.25s ease;
+}
+.lightbox-overlay.active { display: flex; }
+@keyframes lightboxFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.lightbox-overlay img {
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.6);
+    animation: lightboxZoomIn 0.3s ease;
+}
+@keyframes lightboxZoomIn {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    z-index: 100000;
+}
+.lightbox-close:hover {
+    background: rgba(255,255,255,0.3);
+    transform: rotate(90deg);
+}
+
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container">
+<h1>Nuestro Catálogo</h1>
+<p>Ramos y bouquets únicos para cada ocasión especial</p>
+<div class="decorative-line"></div>
+</div>
+</header>
+<section class="filter-section">
+<div class="container">
+<div class="search-wrapper">
+<svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+<input type="text" id="searchInput" class="search-input" placeholder="Busca por nombre o código (ej: Rosas, FUN-001, hortensias...)" autocomplete="off">
+<button class="search-clear" id="searchClear" type="button" aria-label="Limpiar búsqueda">×</button>
+<div class="search-info" id="searchInfo"></div>
+</div>
+<div class="filter-buttons">
+<button class="filter-btn active" data-category="all">Todos</button>
+<button class="filter-btn" data-category="hortensias">Hortensias</button>
+<button class="filter-btn" data-category="gerberas">Gerberas</button>
+<button class="filter-btn" data-category="lirios">Lirios</button>
+<button class="filter-btn" data-category="rosas">Rosas</button>
+<button class="filter-btn" data-category="girasoles">Girasoles</button>
+<button class="filter-btn" data-category="orquideas">Orquídeas</button>
+<button class="filter-btn" data-category="tulipanes">Tulipanes</button>
+<button class="filter-btn" data-category="especiales">Especiales</button>
+<button class="filter-btn" data-category="funebre">Fúnebres</button>
+</div>
+</div>
+</section>
+<section class="catalog">
+<div class="container">
+<div class="no-results" id="noResults">
+<h3>Sin resultados</h3>
+<p>No encontramos arreglos que coincidan con tu búsqueda. Intenta con otro nombre o código.</p>
+</div>
+<div class="products-grid" id="productsGrid">
+
+ <div class="product-card" data-category="hortensias" data-code="HOR-001" data-name="Nube de Elegancia">
+ <div class="category-badge">Hortensias</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/1.webp" alt="Hortensias" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">HOR-001</span>
+ <h2 class="product-title">Nube de Elegancia</h2>
+ <p class="product-description">Hermoso bouquet de hortensias variadas o unicolor con variedad de follajes acordes decorado con papel coreano. Incluye lazo de cinta interlón, tarjeta dedicatoria, florero y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 5 hortensias</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 10 hortensias</span><span class="size-price">$203.125</span></li><li><span class="size-label">• 15 hortensias</span><span class="size-price">$265.625</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Nube de Elegancia','HOR-001','hortensias_1')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="gerberas" data-code="GER-001" data-name="Explosión de Color">
+ <div class="category-badge">Gerberas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/ramo_morado.png" alt="Gerberas" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GER-001</span>
+ <h2 class="product-title">Explosión de Color</h2>
+ <p class="product-description">Hermoso bouquet con gerberas y follajes acordes según stock. Decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria. Colores a elección unicolor o variados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 10 gerberas</span><span class="size-price">$90.625</span></li><li><span class="size-label">• 15 gerberas</span><span class="size-price">$125.000</span></li><li><span class="size-label">• 20 gerberas</span><span class="size-price">$156.250</span></li><li><span class="size-label">• 25 gerberas</span><span class="size-price">$187.500</span></li></ul></div>
+ <div class="product-price">Desde $90.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Explosión de Color','GER-001','gerberas_2')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="lirios" data-code="LIR-001" data-name="Realeza Natural">
+ <div class="category-badge">Lirios</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/3.webp" alt="Lirios" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">LIR-001</span>
+ <h2 class="product-title">Realeza Natural</h2>
+ <p class="product-description">Diseñado con lirios, rosas mini y gran variedad de follajes acordes. Decorado con papel coreano y cinta satinada o interlón. Incluye tarjeta dedicatoria y tips de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 3 lirios</span><span class="size-price">$125.000</span></li><li><span class="size-label">• 6 lirios</span><span class="size-price">$187.500</span></li><li><span class="size-label">• 10 lirios</span><span class="size-price">$281.250</span></li></ul></div>
+ <div class="product-price">Desde $125.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Realeza Natural','LIR-001','lirios_princesa_3')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-001" data-name="Suavidad Perfecta">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/4.webp" alt="Bouquet Pastel" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-001</span>
+ <h2 class="product-title">Suavidad Perfecta</h2>
+ <p class="product-description">Hermoso bouquet de flores (rosas variadas, gerberas, verónicas) y gran variedad de follajes en tonos claros decorado con papel coreano. Incluye lazo de cinta, tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$156.250</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$203.125</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$250.000</span></li></ul></div>
+ <div class="product-price">Desde $156.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Suavidad Perfecta','ROS-001','bouquet_pastel_4')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-001" data-name="Jardín de Abundancia">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/5.webp" alt="Jardín de Abundancia" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-001</span>
+ <h2 class="product-title">Jardín de Abundancia</h2>
+ <p class="product-description">Diseño en canasta o base de madera o base de cristal con gran variedad de flores, follajes y frutas de temporada. Incluye tarjeta dedicatoria. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S</span><span class="size-price">$218.750</span></li><li><span class="size-label">• M</span><span class="size-price">$250.000</span></li><li><span class="size-label">• L</span><span class="size-price">$296.875</span></li><li><span class="size-label">• XL</span><span class="size-price">$359.375</span></li></ul></div>
+ <div class="product-price">Desde $218.750</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Jardín de Abundancia','ESP-001','frutal_tropical_5')">Pedir Ahora</button>
+ </div>
+ </div>
+
+
+ <div class="product-card" data-category="lirios" data-code="LIR-002" data-name="Sinfonía Floral">
+ <div class="category-badge">Lirios</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/7.webp" alt="Mix Lirios" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">LIR-002</span>
+ <h2 class="product-title">Sinfonía Floral</h2>
+ <p class="product-description">Bouquet flores mixtas con lirios. Decorado con papeles coreanos y lazo de cinta. Incluye tarjeta dedicatoria y manual de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 5 lirios</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 10 lirios</span><span class="size-price">$187.500</span></li><li><span class="size-label">• 15 lirios</span><span class="size-price">$250.000</span></li><li><span class="size-label">• 20 lirios</span><span class="size-price">$296.875</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Sinfonía Floral','LIR-002','mix_lirios_7')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-002" data-name="Tributo Eterno">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/8.webp" alt="Ofrendas Florales" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-002</span>
+ <h2 class="product-title">Tributo Eterno</h2>
+ <p class="product-description">Ofrenda floral tipo corona en flores y color a elección del cliente. Incluye cinta con letras doradas. El valor puede variar dependiendo del tipo de flores y el tamaño. Foto de referencia.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Tributo Eterno','ESP-002','ofrendas_florales_8')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="hortensias" data-code="HOR-002" data-name="Delicadeza en Cristal">
+ <div class="category-badge">Hortensias</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/9.webp" alt="Hortensia en Jarrón" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">HOR-002</span>
+ <h2 class="product-title">Delicadeza en Cristal</h2>
+ <p class="product-description">Delicado bouquet diseñado con hortensias y rosas color pastel y variedad de follajes acordes decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria, jarrón y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + 3 hortensias</span><span class="size-price">$184.375</span></li><li><span class="size-label">• 24 rosas + 4 hortensias</span><span class="size-price">$221.875</span></li><li><span class="size-label">• 30 rosas + 5 hortensias</span><span class="size-price">$263.125</span></li></ul></div>
+ <div class="product-price">Desde $184.375</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Delicadeza en Cristal','HOR-002','hortensia_jarron_9')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="girasoles" data-code="GIR-001" data-name="Fusión Solar">
+ <div class="category-badge">Girasoles</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/10.webp" alt="Fusión Solar" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GIR-001</span>
+ <h2 class="product-title">Fusión Solar</h2>
+ <p class="product-description">Hermoso bouquet con girasoles y rosas, variedad de follajes acorde según stock, decorado con papel coreano y lazo de satín. Incluye tarjeta dedicatoria. Color de las rosas a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + 1 girasol</span><span class="size-price">$115.625</span></li><li><span class="size-label">• 18 rosas + 2 girasoles</span><span class="size-price">$146.875</span></li><li><span class="size-label">• 24 rosas + 3 girasoles</span><span class="size-price">$178.125</span></li></ul></div>
+ <div class="product-price">Desde $115.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Fusión Solar','GIR-001','girasol_rosas_10')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="lirios" data-code="LIR-003" data-name="Pureza Radiante">
+ <div class="category-badge">Lirios</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/11.webp" alt="Pureza Radiante" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">LIR-003</span>
+ <h2 class="product-title">Pureza Radiante</h2>
+ <p class="product-description">Hermoso bouquet con lirios y follajes acordes según el stock decorado con papeles coreanos y lazo de cinta. Colores a elección del cliente unicolor o variados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 3 lirios</span><span class="size-price">$96.250</span></li><li><span class="size-label">• 5 lirios</span><span class="size-price">$158.750</span></li><li><span class="size-label">• 8 lirios</span><span class="size-price">$208.750</span></li><li><span class="size-label">• 10 lirios</span><span class="size-price">$246.250</span></li><li><span class="size-label">• 15 lirios</span><span class="size-price">$271.250</span></li><li><span class="size-label">• 20 lirios</span><span class="size-price">$296.875</span></li></ul></div>
+ <div class="product-price">Desde $96.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Pureza Radiante','LIR-003','lirios_puros_11')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="girasoles" data-code="GIR-002" data-name="Energía Doble">
+ <div class="category-badge">Girasoles</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/12.webp" alt="Energía Doble" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GIR-002</span>
+ <h2 class="product-title">Energía Doble</h2>
+ <p class="product-description">Hermoso bouquet con girasoles, gerberas y variedad de follajes decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 4 girasoles + 4 gerberas</span><span class="size-price">$123.125</span></li><li><span class="size-label">• 6 girasoles + 7 gerberas</span><span class="size-price">$173.125</span></li><li><span class="size-label">• 10 girasoles + 10 gerberas</span><span class="size-price">$223.125</span></li></ul></div>
+ <div class="product-price">Desde $123.125</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Energía Doble','GIR-002','girasoles_gerberas_12')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-003" data-name="Majestuosidad Floral">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/13.webp" alt="Majestuosidad Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-003</span>
+ <h2 class="product-title">Majestuosidad Floral</h2>
+ <p class="product-description">Hermoso jardín diseñado con rosas, lirios, gerberas y gran variedad de flores y follajes acordes. Especiales para decorar espacios amplios (iglesias, auditorios, recepciones, etc). El color varía según la ocasión.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 18 rosas + 5 lirios</span><span class="size-price">$281.250</span></li><li><span class="size-label">• 24 rosas + 8 lirios</span><span class="size-price">$312.500</span></li><li><span class="size-label">• 36 rosas + 10 lirios</span><span class="size-price">$359.375</span></li></ul></div>
+ <div class="product-price">Desde $281.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Majestuosidad Floral','ESP-003','jardin_rosas_lirios_13')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-004" data-name="Sueño Nupcial">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/14.webp" alt="Bouquet Novia" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-004</span>
+ <h2 class="product-title">Sueño Nupcial</h2>
+ <p class="product-description">Hermosos y únicos bouquets para novia con flores seleccionadas y diseñados a tu gusto. El costo varía según variedad de flores, modelo y tipo de boda, no incluye el azahar del novio. Imagen de referencia.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Sueño Nupcial','ESP-004','bouquet_novia_14')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-002" data-name="Corona Imperial">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/58.webp" alt="Corona Imperial" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-002</span>
+ <h2 class="product-title">Corona Imperial</h2>
+ <p class="product-description">Hermoso bouquet de rosas con apliques de mariposa y corona con imitación diamantes, cinta mensaje personalizado. Decorado con papeles coreanos. Incluye tarjeta dedicatoria. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 36 rosas</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 48 rosas</span><span class="size-price">$359.375</span></li><li><span class="size-label">• 70 rosas</span><span class="size-price">$437.500</span></li><li><span class="size-label">• 100 rosas</span><span class="size-price">$546.875</span></li></ul></div>
+ <div class="product-price">Desde $296.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corona Imperial','ROS-002','bouquet_princesa_15')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="lirios" data-code="LIR-004" data-name="Oasis de Pureza">
+ <div class="category-badge">Lirios</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/15.webp" alt="Jardín de Lirios" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">LIR-004</span>
+ <h2 class="product-title">Oasis de Pureza</h2>
+ <p class="product-description">Hermoso jardín con lirios, complementos y follajes acordes diseñado en base de madera o canasta decorado con papel coreano y lazo de satín o interlón. Incluye tarjeta dedicatoria y manual de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 5 lirios</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 10 lirios</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 20 lirios</span><span class="size-price">$328.125</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Oasis de Pureza','LIR-004','jardin_lirios_16')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-003" data-name="Alas de Ensueño">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/16.webp" alt="Alas de Ensueño" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-003</span>
+ <h2 class="product-title">Alas de Ensueño</h2>
+ <p class="product-description">Delicado bouquet con rosas y gran variedad de follajes acordes. Incluye alitas de mariposa (sintéticas), lazo de cinta interlón o satinada, tarjeta dedicatoria. Colores a elección unicolor o variados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + alas</span><span class="size-price">$150.625</span></li><li><span class="size-label">• 24 rosas + alas</span><span class="size-price">$200.625</span></li><li><span class="size-label">• 36 rosas + alas</span><span class="size-price">$250.000</span></li><li><span class="size-label">• 50 rosas + alas</span><span class="size-price">$312.500</span></li><li><span class="size-label">• 100 rosas + alas</span><span class="size-price">$546.875</span></li></ul></div>
+ <div class="product-price">Desde $150.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Alas de Ensueño','ROS-003','bouquet_mariposa_17')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="girasoles" data-code="GIR-003" data-name="Dúo Perfecto">
+ <div class="category-badge">Girasoles</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/17.webp" alt="Dúo Perfecto" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GIR-003</span>
+ <h2 class="product-title">Dúo Perfecto</h2>
+ <p class="product-description">Hermoso bouquet elaborado con rosas y girasoles medianos decorado con variedad de follajes según stock, papel coreano y lazo de cinta. Incluye tarjeta dedicatoria.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + 3 girasoles</span><span class="size-price">$121.875</span></li><li><span class="size-label">• 18 rosas + 5 girasoles</span><span class="size-price">$163.125</span></li><li><span class="size-label">• 24 rosas + 8 girasoles</span><span class="size-price">$212.500</span></li></ul></div>
+ <div class="product-price">Desde $121.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Dúo Perfecto','GIR-003','rosas_girasoles_18')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-005" data-name="Paraíso Natural">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/18.webp" alt="Paraíso Natural" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-005</span>
+ <h2 class="product-title">Paraíso Natural</h2>
+ <p class="product-description">Hermoso bouquet tropical elaborado con variedad de flores tropicales (gerberas, lirios, margaritas entre otras) y variedad de follajes según el stock. Decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 1 lirio + 3 gerberas</span><span class="size-price">$121.875</span></li><li><span class="size-label">• M - 2 lirios + 5 gerberas</span><span class="size-price">$156.250</span></li><li><span class="size-label">• L - 3 lirios + 8 gerberas</span><span class="size-price">$194.375</span></li></ul></div>
+ <div class="product-price">Desde $121.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Paraíso Natural','ESP-005','bouquet_tropical_19')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-006" data-name="Triunfo Florido">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/20.webp" alt="Graduación" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-006</span>
+ <h2 class="product-title">Triunfo Florido</h2>
+ <p class="product-description">Bouquet con girasoles, lirios, belladonas y gran variedad de follajes, decorado con papel coreano y lazo de cinta interlón. Incluye pick alusivo al grado y tarjeta dedicatoria.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 3 girasoles + 3 lirios</span><span class="size-price">$125.000</span></li><li><span class="size-label">• M - 5 girasoles + 4 lirios</span><span class="size-price">$171.875</span></li><li><span class="size-label">• L - 10 girasoles + 5 lirios</span><span class="size-price">$234.375</span></li></ul></div>
+ <div class="product-price">Desde $125.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Triunfo Florido','ESP-006','graduacion_20')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-007" data-name="Fuerza Tropical">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/21.webp" alt="Fuerza Tropical" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-007</span>
+ <h2 class="product-title">Fuerza Tropical</h2>
+ <p class="product-description">Diseñado con aves del paraíso, lirios, girasol mini, gerberas y gran variedad de follajes, decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria. Especial para caballero.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 2 lirios + 2 aves</span><span class="size-price">$119.375</span></li><li><span class="size-label">• M - 4 lirios + 4 aves</span><span class="size-price">$169.375</span></li><li><span class="size-label">• L - 6 lirios + 6 aves</span><span class="size-price">$231.875</span></li></ul></div>
+ <div class="product-price">Desde $119.375</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Fuerza Tropical','ESP-007','exotico_21')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-004" data-name="Armonía Suprema">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/22.webp" alt="Armonía Suprema" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-004</span>
+ <h2 class="product-title">Armonía Suprema</h2>
+ <p class="product-description">Hermoso bouquet diseñado con lirios, rosas, gerberas entre otras variedades de follajes acompañantes, decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$156.250</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$203.125</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$250.000</span></li></ul></div>
+ <div class="product-price">Desde $156.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Armonía Suprema','ROS-004','mixto_especial_22')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-008" data-name="Jardín en Cristal">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/23.webp" alt="Jardín en Cristal" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-008</span>
+ <h2 class="product-title">Jardín en Cristal</h2>
+ <p class="product-description">Diseño redondo en pecera de cristal con gran variedad de flores y follajes tonos pastel. Incluye lazo de cinta y tarjeta dedicatoria. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 6 rosas</span><span class="size-price">$123.125</span></li><li><span class="size-label">• M - 12 rosas</span><span class="size-price">$181.875</span></li><li><span class="size-label">• L - 24 rosas</span><span class="size-price">$219.375</span></li><li><span class="size-label">• XL - 30 rosas</span><span class="size-price">$263.125</span></li></ul></div>
+ <div class="product-price">Desde $123.125</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Jardín en Cristal','ESP-008','pecera_pastel_23')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-005" data-name="Clásico Efectivo">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/ramo_rosas.png" alt="Clásico Efectivo" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-005</span>
+ <h2 class="product-title">Clásico Efectivo</h2>
+ <p class="product-description">Bouquet diseñado con rosas y variedad de follajes acompañantes, decorado con papel coreano. Incluye lazo de cinta interlón o satín y tarjeta dedicatoria. Color a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$119.375</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$165.625</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$228.125</span></li><li><span class="size-label">• 50 rosas</span><span class="size-price">$321.875</span></li></ul></div>
+ <div class="product-price">Desde $119.375</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Clásico Efectivo','ROS-005','rosas_sencillo_24')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-006" data-name="Escultura Floral">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/25.webp" alt="Escultura Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-006</span>
+ <h2 class="product-title">Escultura Floral</h2>
+ <p class="product-description">Diseño tipo topiario sencillo con variedad de follajes según stock. Incluye tarjeta dedicatoria y manual de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$171.875</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 30 rosas</span><span class="size-price">$281.250</span></li></ul></div>
+ <div class="product-price">Desde $171.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Escultura Floral','ROS-006','topiario_25')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-007" data-name="Gradación Perfecta">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/26.webp" alt="Gradación Perfecta" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-007</span>
+ <h2 class="product-title">Gradación Perfecta</h2>
+ <p class="product-description">Diseño con rosas colores variados o unicolor a elección. Incluye tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 24 rosas</span><span class="size-price">$250.000</span></li><li><span class="size-label">• 30 rosas</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$343.750</span></li></ul></div>
+ <div class="product-price">Desde $250.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Gradación Perfecta','ROS-007','diseno_escala_26')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-008" data-name="Navegante Floral">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/27.webp" alt="Navegante Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-008</span>
+ <h2 class="product-title">Navegante Floral</h2>
+ <p class="product-description">Canasta ecológica reutilizable diseñada con rosas colores variados o unicolor y follajes acordes, lazo de cinta interlón. Incluye tarjeta dedicatoria y manual de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 24 rosas</span><span class="size-price">$218.750</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$250.000</span></li><li><span class="size-label">• 48 rosas</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 80 rosas</span><span class="size-price">$375.000</span></li><li><span class="size-label">• 100 rosas</span><span class="size-price">$437.500</span></li></ul></div>
+ <div class="product-price">Desde $218.750</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Navegante Floral','ROS-008','canasta_rosal_27')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-009" data-name="Serenidad en Cristal">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/28.webp" alt="Serenidad en Cristal" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-009</span>
+ <h2 class="product-title">Serenidad en Cristal</h2>
+ <p class="product-description">Mix de flores y follajes tonos pastel en jarrón color. Incluye lazo de cinta interlón y tarjeta dedicatoria. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 6 rosas florero mini</span><span class="size-price">$140.625</span></li><li><span class="size-label">• M - 12 rosas florero med.</span><span class="size-price">$203.125</span></li><li><span class="size-label">• L - 24 rosas</span><span class="size-price">$250.000</span></li><li><span class="size-label">• XL - 36 rosas florero grande</span><span class="size-price">$328.125</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Serenidad en Cristal','ESP-009','jarron_tropical_28')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-010" data-name="Naturaleza Consciente">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/29.webp" alt="Naturaleza Consciente" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-010</span>
+ <h2 class="product-title">Naturaleza Consciente</h2>
+ <p class="product-description">Diseño elaborado con flores y follajes variadas en canasto ecológico reutilizable amigable con el medio ambiente. Colores a elección, el modelo de canasto puede variar un poco. Incluye tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S</span><span class="size-price">$203.125</span></li><li><span class="size-label">• M</span><span class="size-price">$250.000</span></li><li><span class="size-label">• L</span><span class="size-price">$328.125</span></li></ul></div>
+ <div class="product-price">Desde $203.125</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Naturaleza Consciente','ESP-010','canasto_ecologico_29')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-009" data-name="Amor en Capas">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/30.webp" alt="Amor en Capas" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-009</span>
+ <h2 class="product-title">Amor en Capas</h2>
+ <p class="product-description">Diseño en forma de corazón dos o tres tonos de rosas. Incluye lazo de cinta satín y tarjeta dedicatoria. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 16 rosas</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$187.500</span></li><li><span class="size-label">• 30 rosas</span><span class="size-price">$250.000</span></li><li><span class="size-label">• 50 rosas</span><span class="size-price">$359.375</span></li><li><span class="size-label">• 80 rosas</span><span class="size-price">$421.875</span></li><li><span class="size-label">• 100 rosas</span><span class="size-price">$468.750</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Amor en Capas','ROS-009','corazon_fusion_30')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="orquideas" data-code="ORQ-002" data-name="Distinción Absoluta">
+ <div class="category-badge">Orquídeas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/31.webp" alt="Distinción Absoluta" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ORQ-002</span>
+ <h2 class="product-title">Distinción Absoluta</h2>
+ <p class="product-description">Hermoso bouquet con rosas, botones de orquídeas Cymbidium y gran variedad de flores y follajes acordes decorado con papel coreano y lazo de cinta interlón o satinada. Incluye tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + 3 botones</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 24 rosas + 5 botones</span><span class="size-price">$203.125</span></li><li><span class="size-label">• 36 rosas + 8 botones</span><span class="size-price">$250.000</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Distinción Absoluta','ORQ-002','bouquet_senorial_31')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="tulipanes" data-code="TUL-001" data-name="Primavera Europea">
+ <div class="category-badge">Tulipanes</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/32.webp" alt="Primavera Europea" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">TUL-001</span>
+ <h2 class="product-title">Primavera Europea</h2>
+ <p class="product-description">Hermoso bouquet con tulipanes decorados con follajes, papel coreano y lazo de cinta satín. Colores disponibles: rojo, rosado, amarillo, blanco, fucsia, matizado.</p>
+<div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 10 tulipanes</span><span class="size-price">$230.000</span></li><li><span class="size-label">• 20 tulipanes</span><span class="size-price">$380.000</span></li></ul></div>
+<div class="product-price">Desde $230.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Primavera Europea','TUL-001','tulipanes_32')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-010" data-name="Romanticismo Vintage">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/33.webp" alt="Romanticismo Vintage" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-010</span>
+ <h2 class="product-title">Romanticismo Vintage</h2>
+ <p class="product-description">Delicado bouquet con Rosas del Jardín color pastel y paquete de gipsophila de color acorde, decorado con papeles coreanos y lazo de interlón o satín. Las rosas y la gipso pueden ir pintadas con aerosol especial. Incluye tarjeta dedicatoria y tips de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$359.375</span></li></ul></div>
+ <div class="product-price">Desde $234.375</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Romanticismo Vintage','ROS-010','rosas_jardin_33')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-011" data-name="Eficiencia Natural">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/34.webp" alt="Eficiencia Natural" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-011</span>
+ <h2 class="product-title">Eficiencia Natural</h2>
+ <p class="product-description">Bouquet con rosas con variedad de flores y follajes acordes decorado con papel coreano y lazo de cinta sencillo. Incluye tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 6 rosas + 1 lirio</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 12 rosas + 3 lirios</span><span class="size-price">$178.125</span></li><li><span class="size-label">• 18 rosas + 4 lirios</span><span class="size-price">$215.625</span></li><li><span class="size-label">• 24 rosas + 5 lirios</span><span class="size-price">$263.125</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Eficiencia Natural','ROS-011','bouquet_sencillo_34')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-011" data-name="Jardín Nutritivo">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/35.webp" alt="Jardín Nutritivo" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-011</span>
+ <h2 class="product-title">Jardín Nutritivo</h2>
+ <p class="product-description">Diseño floral en canasta con variedad de flores perfectamente combinadas. Incluye variedad de frutas. El tono de las flores y las frutas son a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S</span><span class="size-price">$250.000</span></li><li><span class="size-label">• M</span><span class="size-price">$281.250</span></li><li><span class="size-label">• L</span><span class="size-price">$312.500</span></li><li><span class="size-label">• XL</span><span class="size-price">$343.750</span></li></ul></div>
+ <div class="product-price">Desde $250.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Jardín Nutritivo','ESP-011','canasta_frutal_35')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-012" data-name="Antojo Floral">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/36.webp" alt="Antojo Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-012</span>
+ <h2 class="product-title">Antojo Floral</h2>
+ <p class="product-description">Diseño divertido con variedad de flores en forma de dulce. Incluye empaque especial con papeles coreanos, tarjeta dedicatoria y tips de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 6 rosas</span><span class="size-price">$140.625</span></li><li><span class="size-label">• M - 12 rosas</span><span class="size-price">$140.625</span></li><li><span class="size-label">• L - 18 rosas</span><span class="size-price">$234.375</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Antojo Floral','ESP-012','dulce_flores_36')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-013" data-name="Llegada Especial">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/37.webp" alt="Llegada Especial" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-013</span>
+ <h2 class="product-title">Llegada Especial</h2>
+ <p class="product-description">Diseño redondo con rosas y complementos acordes en base de latón vintage. Incluye globo metalizado y figura de felpa 25 cm aprox. (color a elección), tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$343.750</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$390.625</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$468.750</span></li></ul></div>
+ <div class="product-price">Desde $343.750</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Llegada Especial','ESP-013','bienvenida_bebes_37')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-014" data-name="Transformación Delicada">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/38.webp" alt="Transformación Delicada" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-014</span>
+ <h2 class="product-title">Transformación Delicada</h2>
+ <p class="product-description">Delicada composición de flores variadas. Incluye alitas (sintéticas) de mariposa decorado con papel coreano y lazo de interlón. Incluye tarjeta dedicatoria y tips de cuidados. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S</span><span class="size-price">$187.500</span></li><li><span class="size-label">• M</span><span class="size-price">$234.375</span></li><li><span class="size-label">• L</span><span class="size-price">$281.250</span></li></ul></div>
+ <div class="product-price">Desde $187.500</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Transformación Delicada','ESP-014','sutil_mariposa_38')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="orquideas" data-code="ORQ-003" data-name="Orquídea en Caja">
+ <div class="category-badge">Orquídeas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/39.webp" alt="Orquídea en Caja" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ORQ-003</span>
+ <h2 class="product-title">Orquídea en Caja</h2>
+ <p class="product-description">Caja estuche diseñada con orquídeas Cymbidium, rosas, gerberas y variedad de flores y follajes perfectamente combinados. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 4 orquídeas Cymbidium</span><span class="size-price">$156.250</span></li><li><span class="size-label">• M - 6 orquídeas Cymbidium</span><span class="size-price">$203.125</span></li><li><span class="size-label">• L - 8 orquídeas Cymbidium</span><span class="size-price">$250.000</span></li><li><span class="size-label">• XL - 10 orquídeas Cymbidium</span><span class="size-price">$296.875</span></li></ul></div>
+ <div class="product-price">Desde $156.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Orquídea en Caja','ORQ-003','estuche_cymbidium_39')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-012" data-name="Vintage Romántico">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/40.webp" alt="Vintage Romántico" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-012</span>
+ <h2 class="product-title">Vintage Romántico</h2>
+ <p class="product-description">Diseño en forma de corazón con rosas del jardín y variedad de follajes acordes. Colores a elección pueden ser tinturadas. Incluye lazo satín.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 15 rosas</span><span class="size-price">$281.250</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$328.125</span></li></ul></div>
+ <div class="product-price">Desde $281.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Vintage Romántico','ROS-012','corazon_rosas_jardin_40')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="girasoles" data-code="GIR-004" data-name="Selva de Colores">
+ <div class="category-badge">Girasoles</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/41.webp" alt="Selva de Colores" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GIR-004</span>
+ <h2 class="product-title">Selva de Colores</h2>
+ <p class="product-description">Hermoso jardín diseñado con aves del paraíso, girasoles, rosas, lirios y gran variedad de follajes acordes decorado con papel coreano y lazo de interlón. Incluye tarjeta dedicatoria. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 6 rosas + 3 girasoles</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 12 rosas + 4 girasoles</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 24 rosas + 5 girasoles</span><span class="size-price">$328.125</span></li><li><span class="size-label">• 36 rosas + 6 girasoles</span><span class="size-price">$406.250</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Selva de Colores','GIR-004','jardin_tropical_41')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="girasoles" data-code="GIR-005" data-name="Radiante Dorado">
+ <div class="category-badge">Girasoles</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/42.webp" alt="Radiante Dorado" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GIR-005</span>
+ <h2 class="product-title">Radiante Dorado</h2>
+ <p class="product-description">Radiante bouquet de rosas y girasoles con follajes y complementos acorde decorado con papel coreano y lazo de satín o interlón. Incluye tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + 4 girasoles</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 24 rosas + 6 girasoles</span><span class="size-price">$234.375</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Radiante Dorado','GIR-005','bouquet_girasoles_42')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-013" data-name="Línea Elegante">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/43.webp" alt="Línea Elegante" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-013</span>
+ <h2 class="product-title">Línea Elegante</h2>
+ <p class="product-description">Caja con rosas decoradas con papel coreano y variedad de follajes acordes al tono de las rosas, aplique mini en la tapa, lazo de cinta interlón, tarjeta dedicatoria.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$187.500</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 50 rosas</span><span class="size-price">$343.750</span></li></ul></div>
+ <div class="product-price">Desde $187.500</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Línea Elegante','ROS-013','caja_horizontal_43')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-015" data-name="Inmortalidad Floral">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/44.webp" alt="Inmortalidad Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-015</span>
+ <h2 class="product-title">Inmortalidad Floral</h2>
+ <p class="product-description">Hermosa Rosa Eterna o Preservada en urna de cristal que ayuda a su preservación para durar entre 2 y 4 años. Incluye empaque, tarjeta dedicatoria y manual de cuidados. Colores disponibles: blanco, morado, negro, oro rosa, rosado, rojo, azul.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Inmortalidad Floral','ESP-015','rosa_eterna_44')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="orquideas" data-code="ORQ-004" data-name="Mini Elegancia">
+ <div class="category-badge">Orquídeas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/45.webp" alt="Mini Elegancia" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ORQ-004</span>
+ <h2 class="product-title">Mini Elegancia</h2>
+ <p class="product-description">Orquídeas Phalaenopsis mini multiflora decorada con papel coreano y lazo de cinta. Incluye matera decorativa, tarjeta dedicatoria y manual de cuidados. Colores disponibles: blanca, fucsia, rosada, naranja, amarilla, matizada, etc.</p>
+ <div class="product-price">Desde $112.500</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Mini Elegancia','ORQ-004','orquidea_multiflora_45')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-014" data-name="Despertar Floral">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/46.webp" alt="Despertar Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-014</span>
+ <h2 class="product-title">Despertar Floral</h2>
+ <p class="product-description">Diseño floral primaveral en jarrón decorado tipo bouquet con papel coreano y lazo de cinta. Flores variadas, tonos a elección. Incluye tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 6 rosas</span><span class="size-price">$171.875</span></li><li><span class="size-label">• 12 rosas</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$359.375</span></li></ul></div>
+ <div class="product-price">Desde $171.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Despertar Floral','ROS-014','primavera_46')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-015" data-name="Jardín en Mimbre">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/47.webp" alt="Jardín en Mimbre" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-015</span>
+ <h2 class="product-title">Jardín en Mimbre</h2>
+ <p class="product-description">Diseño en canasta con rosas y gran variedad de flores y follajes acordes. Colores a elección del cliente. Incluye tarjeta dedicatoria y tips de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 6 rosas</span><span class="size-price">$125.000</span></li><li><span class="size-label">• 12 rosas</span><span class="size-price">$171.875</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$234.375</span></li></ul></div>
+ <div class="product-price">Desde $125.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Jardín en Mimbre','ROS-015','canasta_primavera_47')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-016" data-name="Dulzura Doble">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/48.webp" alt="Dulzura Doble" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-016</span>
+ <h2 class="product-title">Dulzura Doble</h2>
+ <p class="product-description">Hermoso bouquet de rosas con centro en Chocolates. Incluye decoración con papel coreano, moño de cinta de satín o interlón, tarjeta dedicatoria y manual de cuidados. Colores a elección del cliente.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 15 rosas + 12 chocolates</span><span class="size-price">$250.000</span></li><li><span class="size-label">• M - 24 rosas + 18 chocolates</span><span class="size-price">$312.500</span></li><li><span class="size-label">• L - 26 rosas + 24 chocolates</span><span class="size-price">$406.250</span></li></ul></div>
+ <div class="product-price">Desde $250.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Dulzura Doble','ESP-016','bouquet_chocolates_48')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-017" data-name="Experiencia Completa">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/49.webp" alt="Experiencia Completa" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-017</span>
+ <h2 class="product-title">Experiencia Completa</h2>
+ <p class="product-description">Hermoso detalle sorpresa incluye torta personal, capuchino, waffle, bebida a elección, mix de frutos secos, mini postre, bouquet de globos personalizado, bouquet floral, canasta o mesa de madera. Color de la decoración a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S</span><span class="size-price">$296.875</span></li><li><span class="size-label">• M</span><span class="size-price">$343.750</span></li><li><span class="size-label">• L</span><span class="size-price">$390.625</span></li><li><span class="size-label">• XL</span><span class="size-price">$453.125</span></li></ul></div>
+ <div class="product-price">Desde $296.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Experiencia Completa','ESP-017','detalles_sorpresa_49')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-018" data-name="Tesoro Floral">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/50.webp" alt="Tesoro Floral" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-018</span>
+ <h2 class="product-title">Tesoro Floral</h2>
+ <p class="product-description">Diseño en Baúl gigante de mimbre ecológico reutilizable amigable con el medio ambiente, con rosas, lirios y gran variedad de flores y follajes acordes según el stock. Incluye lazo de cinta interlón, tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S</span><span class="size-price">$375.000</span></li><li><span class="size-label">• M</span><span class="size-price">$437.500</span></li><li><span class="size-label">• L</span><span class="size-price">$546.875</span></li><li><span class="size-label">• XL</span><span class="size-price">$625.000</span></li></ul></div>
+ <div class="product-price">Desde $375.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Tesoro Floral','ESP-018','baul_recuerdos_50')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="orquideas" data-code="ORQ-005" data-name="Orquídea Premium">
+ <div class="category-badge">Orquídeas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/51.webp" alt="Orquídea Premium" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ORQ-005</span>
+ <h2 class="product-title">Orquídea Premium</h2>
+ <p class="product-description">Diseño con orquídea Cymbidium en florero, rosas, flores y follajes acordes según el stock (los colores pueden variar).</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + orquídea 8-12 botones</span><span class="size-price">$296.875</span></li><li><span class="size-label">• 24 rosas + orquídea 12-16 botones</span><span class="size-price">$343.750</span></li><li><span class="size-label">• 36 rosas + orquídeas 16-20 botones</span><span class="size-price">$406.250</span></li></ul></div>
+ <div class="product-price">Desde $296.875</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Orquídea Premium','ORQ-005','cymbidium_florero_51')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="rosas" data-code="ROS-016" data-name="Delicadeza Pura">
+ <div class="category-badge">Rosas</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/53.webp" alt="Delicadeza Pura" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ROS-016</span>
+ <h2 class="product-title">Delicadeza Pura</h2>
+ <p class="product-description">Diseño tierno bouquet. Colores y variedad de follajes según stock, decorado con papel coreano y lazo de cinta interlón o satinada. Incluye tarjeta dedicatoria. Colores a elección del cliente varios o unicolor.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$119.375</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$143.750</span></li><li><span class="size-label">• 36 rosas</span><span class="size-price">$190.625</span></li></ul></div>
+ <div class="product-price">Desde $119.375</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Delicadeza Pura','ROS-016','bouquet_ternura_53')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-019" data-name="Combo Irresistible">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/54.webp" alt="Combo Irresistible" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-019</span>
+ <h2 class="product-title">Combo Irresistible</h2>
+ <p class="product-description">Hermoso bouquet con rosas, girasoles y Chocolates Ferrero, variedad de follajes según stock, decorado con papel coreano y lazo de cinta. Incluye tarjeta dedicatoria. Colores de rosas varía a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + 3 girasoles + 6 choc.</span><span class="size-price">$209.375</span></li><li><span class="size-label">• 18 rosas + 5 girasoles + 9 choc.</span><span class="size-price">$246.875</span></li><li><span class="size-label">• 24 rosas + 8 girasoles + 12 choc.</span><span class="size-price">$296.250</span></li></ul></div>
+ <div class="product-price">Desde $209.375</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Combo Irresistible','ESP-019','rosas_chocolates_54')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="lirios" data-code="LIR-005" data-name="Elegancia en Trompeta">
+ <div class="category-badge">Lirios</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/55.webp" alt="Elegancia en Trompeta" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">LIR-005</span>
+ <h2 class="product-title">Elegancia en Trompeta</h2>
+ <p class="product-description">Hermoso bouquet con callas (cartuchos) mini, lirios y rosas mini, acompañado de variedades follajes. Incluye lazo de cinta interlón o satín y tarjeta dedicatoria. Colores a elección.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• S - 1 paquete rosa + 3 lirios</span><span class="size-price">$156.250</span></li><li><span class="size-label">• M - 2 paquetes rosa + 5 lirios</span><span class="size-price">$218.750</span></li><li><span class="size-label">• L - 3 paquetes rosa + 7 lirios</span><span class="size-price">$281.250</span></li></ul></div>
+ <div class="product-price">Desde $156.250</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Elegancia en Trompeta','LIR-005','lirios_callas_55')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="girasoles" data-code="GIR-006" data-name="Sol y Amor">
+ <div class="category-badge">Girasoles</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/56.webp" alt="Sol y Amor" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">GIR-006</span>
+ <h2 class="product-title">Sol y Amor</h2>
+ <p class="product-description">Caja decorativa circular, hexagonal o corazón con girasoles, rosas y lazo de cinta satinada, tarjeta dedicatoria y manual de cuidados.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas + girasol</span><span class="size-price">$187.500</span></li><li><span class="size-label">• 18 rosas + girasol</span><span class="size-price">$234.375</span></li><li><span class="size-label">• 24 rosas + girasol</span><span class="size-price">$296.875</span></li></ul></div>
+ <div class="product-price">Desde $187.500</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Sol y Amor','GIR-006','girasol_rosa_56')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-020" data-name="Estilo Portátil">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2025/12/57.webp" alt="Estilo Portátil" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-020</span>
+ <h2 class="product-title">Estilo Portátil</h2>
+ <p class="product-description">Diseño tipo cartera en cartón plastificado con rosas y follajes acordes según el stock. Incluye empaque especial con papeles coreanos, lazo de cinta, tarjeta dedicatoria y tips de cuidados. Colores a elección según el stock.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 12 rosas</span><span class="size-price">$140.625</span></li><li><span class="size-label">• 24 rosas</span><span class="size-price">$203.125</span></li><li><span class="size-label">• 30 rosas</span><span class="size-price">$265.625</span></li></ul></div>
+ <div class="product-price">Desde $140.625</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Estilo Portátil','ESP-020','cartera_57')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="especiales" data-code="ESP-021" data-name="Elegancia Floral Premium">
+ <div class="category-badge">Especiales</div>
+ <div class="product-image"><img src="/wp-content/uploads/2026/01/58.png" alt="Elegancia Floral Premium" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">ESP-021</span>
+ <h2 class="product-title">Elegancia Floral Premium</h2>
+ <p class="product-description">Arreglo floral elegante compuesto por rosas frescas, orquídeas y lirios cuidadosamente seleccionados. Presentado con empaque decorativo premium, follajes naturales y lazo de cinta. Incluye tarjeta dedicatoria personalizada.</p>
+ <div class="product-sizes"><h4>Tamaños disponibles</h4><ul><li><span class="size-label">• 6 rosas + 3 orquídeas + 2 lirios</span><span class="size-price">$175.000</span></li><li><span class="size-label">• 12 rosas + 5 orquídeas + 4 lirios</span><span class="size-price">$225.000</span></li><li><span class="size-label">• 24 rosas + 7 orquídeas + 5 lirios</span><span class="size-price">$287.500</span></li></ul></div>
+ <div class="product-price">Desde $175.000</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Elegancia Floral Premium','ESP-021','elegancia_floral_premium_58')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <!-- ============================== -->
+ <!-- PRODUCTOS FÚNEBRES -->
+ <!-- ============================== -->
+
+ <div class="product-card" data-category="funebre" data-code="FUN-001" data-name="Corona Paz Eterna Blanca">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre1.webp" alt="Corona Paz Eterna Blanca" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-001</span>
+ <h2 class="product-title">Corona Paz Eterna Blanca</h2>
+ <p class="product-description">Arreglo floral fúnebre elegante en forma circular, elaborado con rosas blancas y crisantemos frescos cuidadosamente seleccionados, acompañados de delicados detalles de nube (gypsophila) y follaje verde natural. Presentado sobre base estructural con soporte, incluye lazo de cinta blanca decorativa y espacio para mensaje personalizado, transmitiendo respeto, paz y condolencias.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corona Paz Eterna Blanca','FUN-001','funebre_corona_paz_eterna_blanca')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-002" data-name="Corona Amor Infinito Rojo">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre2.webp" alt="Corona Amor Infinito Rojo" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-002</span>
+ <h2 class="product-title">Corona Amor Infinito Rojo</h2>
+ <p class="product-description">Arreglo floral fúnebre en forma de corona, elaborado con rosas rojas frescas como flor principal, acompañadas de delicados toques de flores blancas y follaje verde natural que realzan su elegancia. Su diseño circular simboliza el amor eterno y la memoria, presentado con base estructural resistente y opción de incluir cinta con mensaje personalizado.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corona Amor Infinito Rojo','FUN-002','funebre_corona_amor_infinito_rojo')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-003" data-name="Arreglo Serenidad Blanca">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre3.webp" alt="Arreglo Serenidad Blanca" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-003</span>
+ <h2 class="product-title">Arreglo Serenidad Blanca</h2>
+ <p class="product-description">Arreglo floral fúnebre elegante en presentación vertical, compuesto por lirios blancos y rosas frescas cuidadosamente seleccionadas, acompañadas de delicados detalles de nube (gypsophila) y follaje verde natural que aportan armonía y sobriedad. Diseñado en base decorativa, transmite paz, respeto y condolencias, con opción de incluir tarjeta o mensaje personalizado.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Arreglo Serenidad Blanca','FUN-003','funebre_arreglo_serenidad_blanca')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-004" data-name="Corazón Recuerdo Eterno">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre4.webp" alt="Corazón Recuerdo Eterno" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-004</span>
+ <h2 class="product-title">Corazón Recuerdo Eterno</h2>
+ <p class="product-description">Arreglo floral fúnebre en forma de corazón, elaborado con rosas blancas frescas cuidadosamente dispuestas, complementadas con un delicado detalle central de rosas rojas que simbolizan amor eterno. Incluye finos toques de nube (gypsophila), lazo decorativo en cinta blanca y base con soporte, además de tarjeta o cinta con mensaje personalizado.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corazón Recuerdo Eterno','FUN-004','funebre_corazon_recuerdo_eterno')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-005" data-name="Ramo Pureza Natural">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre5.webp" alt="Ramo Pureza Natural" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-005</span>
+ <h2 class="product-title">Ramo Pureza Natural</h2>
+ <p class="product-description">Ramo floral elegante de estilo fúnebre, elaborado con tulipanes blancos y flores frescas cuidadosamente seleccionadas, acompañado de delicados detalles de nube (gypsophila), flores silvestres y follaje verde natural que aportan frescura y armonía. Presentado en empaque premium en tonos oscuros con lazo decorativo, transmite respeto, paz y condolencias.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Ramo Pureza Natural','FUN-005','funebre_ramo_pureza_natural')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-006" data-name="Rosa Eterna Blanca Premium">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre6.webp" alt="Rosa Eterna Blanca Premium" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-006</span>
+ <h2 class="product-title">Rosa Eterna Blanca Premium</h2>
+ <p class="product-description">Rosa blanca preservada presentada en elegante cúpula de cristal, símbolo de amor eterno y recuerdo duradero. Acompañada de follaje natural y base decorativa en acabado oscuro con lazo de cinta satinada, este detalle premium es ideal para expresar respeto, condolencias y homenaje, con opción de incluir mensaje personalizado.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Rosa Eterna Blanca Premium','FUN-006','funebre_rosa_eterna_blanca_premium')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-007" data-name="Corona Recuerdo Rojo y Blanco">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre7.webp" alt="Corona Recuerdo Rojo y Blanco" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-007</span>
+ <h2 class="product-title">Corona Recuerdo Rojo y Blanco</h2>
+ <p class="product-description">Ofrenda floral fúnebre tipo corona, elaborada con crisantemos blancos como base y rosas rojas frescas cuidadosamente distribuidas, acompañadas de delicados detalles de nube (gypsophila) y follaje verde natural que realzan su elegancia. Su diseño circular simboliza respeto, amor y recuerdo eterno, e incluye cinta decorativa con mensaje personalizado.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corona Recuerdo Rojo y Blanco','FUN-007','funebre_corona_recuerdo_rojo_blanco')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-008" data-name="Corona Luz Dorada">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre8.webp" alt="Corona Luz Dorada" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-008</span>
+ <h2 class="product-title">Corona Luz Dorada</h2>
+ <p class="product-description">Ofrenda floral fúnebre tipo corona, elaborada con crisantemos blancos y amarillos como base, acompañados de rosas amarillas frescas cuidadosamente seleccionadas y delicados detalles de nube (gypsophila) y follaje verde natural. Su diseño combina tonos que simbolizan luz, gratitud y recuerdo, e incluye cinta decorativa con mensaje personalizado.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corona Luz Dorada','FUN-008','funebre_corona_luz_dorada')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="orquideas" data-code="FUN-009" data-name="Orquídea Blanca Elegancia">
+ <div class="category-badge">Orquídeas</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre9.webp" alt="Orquídea Blanca Elegancia" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-009</span>
+ <h2 class="product-title">Orquídea Blanca Elegancia</h2>
+ <p class="product-description">Orquídea Phalaenopsis blanca en elegante presentación, compuesta por flores frescas cuidadosamente seleccionadas que destacan por su delicadeza y sofisticación. Acompañada de follaje natural, base decorativa y lazo de cinta premium, este arreglo transmite paz, respeto y armonía, ideal para expresar condolencias o brindar un detalle sobrio y significativo.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Orquídea Blanca Elegancia','FUN-009','orquidea_blanca_elegancia')">Pedir Ahora</button>
+ </div>
+ </div>
+
+ <div class="product-card" data-category="funebre" data-code="FUN-010" data-name="Corona Paz Azul y Blanca">
+ <div class="category-badge">Fúnebre</div>
+ <div class="product-image"><img src="https://unicasboutiquefloral.com/wp-content/uploads/2026/04/funebre10.webp" alt="Corona Paz Azul y Blanca" loading="lazy"></div>
+ <div class="product-content">
+ <span class="product-code">FUN-010</span>
+ <h2 class="product-title">Corona Paz Azul y Blanca</h2>
+ <p class="product-description">Ofrenda floral fúnebre tipo corona, elaborada con rosas blancas y crisantemos frescos cuidadosamente seleccionados, acompañados de delicados detalles de flores azules y nube (gypsophila) que aportan contraste y elegancia. Su diseño circular simboliza paz, armonía y recuerdo eterno, complementado con follaje verde natural y base estructural.</p>
+ <div class="product-price">Consultar precio</div>
+ <button class="product-button" onclick="return trackWhatsAppLead('Corona Paz Azul y Blanca','FUN-010','funebre_corona_paz_azul_blanca')">Pedir Ahora</button>
+ </div>
+ </div>
+
+</div></div></section>
+<div class="whatsapp-float">
+<a href="#" onclick="return trackWhatsAppFloat('https://wa.me/573227008625','floating_button_catalogo')">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"/></svg>
+</a>
+</div>
+<script>
+// === FUNCIÓN DE NORMALIZACIÓN: ignora mayúsculas/minúsculas y tildes ===
+function normalizeText(str){
+ if(!str)return '';
+ return str.toString()
+ .toLowerCase()
+ .normalize('NFD')
+ .replace(/[\u0300-\u036f]/g,'')
+ .trim();
+}
+
+document.addEventListener('DOMContentLoaded',function(){
+ var filterButtons=document.querySelectorAll('.filter-btn');
+ var productCards=document.querySelectorAll('.product-card');
+ var searchInput=document.getElementById('searchInput');
+ var searchClear=document.getElementById('searchClear');
+ var searchInfo=document.getElementById('searchInfo');
+ var noResults=document.getElementById('noResults');
+ var productsGrid=document.getElementById('productsGrid');
+ var currentCategory='all';
+ var currentSearch='';
+
+ // Aplicar filtros combinados (categoría + búsqueda)
+ function applyFilters(){
+ var visibleCount=0;
+ var searchNormalized=normalizeText(currentSearch);
+
+ productCards.forEach(function(card){
+ var category=card.dataset.category;
+ var name=normalizeText(card.dataset.name);
+ var code=normalizeText(card.dataset.code);
+
+ var categoryMatch=(currentCategory==='all'||category===currentCategory);
+ var searchMatch=(searchNormalized===''||name.indexOf(searchNormalized)!==-1||code.indexOf(searchNormalized)!==-1);
+
+ if(categoryMatch&&searchMatch){
+ card.style.display='block';
+ visibleCount++;
+ }else{
+ card.style.display='none';
+ }
+ });
+
+ // Mostrar/ocultar mensaje "sin resultados"
+ if(visibleCount===0){
+ noResults.style.display='block';
+ productsGrid.style.display='none';
+ }else{
+ noResults.style.display='none';
+ productsGrid.style.display='grid';
+ }
+
+ // Actualizar info de búsqueda
+ if(currentSearch.trim()!==''){
+ searchInfo.innerHTML='Mostrando <strong>'+visibleCount+'</strong> '+(visibleCount===1?'arreglo':'arreglos')+' para "<strong>'+currentSearch+'</strong>"';
+ }else{
+ searchInfo.innerHTML='';
+ }
+ }
+
+ // Filtros de categoría
+ filterButtons.forEach(function(button){
+ button.addEventListener('click',function(){
+ filterButtons.forEach(function(btn){btn.classList.remove('active');});
+ this.classList.add('active');
+ currentCategory=this.dataset.category;
+ applyFilters();
+ var url=new URL(window.location);
+ url.searchParams.set('categoria',currentCategory);
+ window.history.pushState({},'',url);
+ });
+ });
+
+ // Búsqueda en tiempo real
+ searchInput.addEventListener('input',function(){
+ currentSearch=this.value;
+ if(currentSearch.length>0){
+ searchClear.classList.add('visible');
+ }else{
+ searchClear.classList.remove('visible');
+ }
+ applyFilters();
+ });
+
+ // Limpiar búsqueda
+ searchClear.addEventListener('click',function(){
+ searchInput.value='';
+ currentSearch='';
+ searchClear.classList.remove('visible');
+ applyFilters();
+ searchInput.focus();
+ });
+
+ // Cargar categoría desde URL
+ var urlParams=new URLSearchParams(window.location.search);
+ var categoryParam=urlParams.get('categoria');
+ if(categoryParam&&categoryParam!=='all'){
+ var targetButton=document.querySelector('[data-category="'+categoryParam+'"]');
+ if(targetButton)targetButton.click();
+ }
+});
+
+// === Tracking WhatsApp (botón de cada producto) ===
+function trackWhatsAppLead(productName,productCode,eventLabel){
+ var message='Hola, me interesa '+productName+' (Código: '+productCode+'). ¿Podrías darme más información?';
+ var whatsappUrl='https://wa.me/573227008625?text='+encodeURIComponent(message);
+ try{
+ if(typeof gtag!=='undefined'){
+ gtag('event','conversion',{'send_to':'AW-17503274952/lA9PCODAu4wbEMiPm5pB','event_callback':function(){window.open(whatsappUrl,'_blank');}});
+ }else{window.open(whatsappUrl,'_blank');}
+ }catch(error){console.error('Error:',error);window.open(whatsappUrl,'_blank');}
+ return false;
+}
+
+// === Tracking WhatsApp flotante ===
+function trackWhatsAppFloat(whatsappUrl,eventLabel){
+ try{
+ if(typeof gtag!=='undefined'){
+ gtag('event','conversion',{'send_to':'AW-17503274952/lA9PCODAu4wbEMiPm5pB','event_callback':function(){window.open(whatsappUrl,'_blank');}});
+ }else{window.open(whatsappUrl,'_blank');}
+ }catch(error){console.error('Error:',error);window.open(whatsappUrl,'_blank');}
+ return false;
+}
+</script>
+
+<!-- LIGHTBOX VISUALIZADOR DE IMAGEN -->
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Cerrar">&times;</button>
+    <img id="lightboxImage" src="" alt="">
+</div>
+
+
+<!-- LIGHTBOX SCRIPT -->
+<script>
+(function() {
+    function openLightbox(src, alt) {
+        var overlay = document.getElementById('lightboxOverlay');
+        var img = document.getElementById('lightboxImage');
+        if (!overlay || !img) return;
+        img.src = src;
+        img.alt = alt || '';
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    window.closeLightbox = function(e) {
+        if (e && e.target && e.target.tagName === 'IMG' && e.target.id === 'lightboxImage') return;
+        var overlay = document.getElementById('lightboxOverlay');
+        if (overlay) {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.product-image').forEach(function(container) {
+            container.style.cursor = 'zoom-in';
+            container.addEventListener('click', function(e) {
+                var img = container.querySelector('img');
+                if (img) {
+                    e.preventDefault();
+                    openLightbox(img.src, img.alt);
+                }
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') window.closeLightbox();
+        });
+    });
+})();
+</script>
+
+</body>
+</html>
+<!-- /wp:html -->

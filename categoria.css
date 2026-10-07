@@ -1,0 +1,138 @@
+/* ==========================================================
+   Únicas Boutique Floral — páginas de categoría
+   Paleta y tipografía de catalogo.html
+   ========================================================== */
+.category-hero {
+    min-height: 60vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(192, 137, 196, 0.6)), url('unicas_fotos/17.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 3rem 20px;
+}
+
+.category-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-hero-content h1 {
+    color: #EABE81;
+    font-size: clamp(2.2rem, 6vw, 4rem);
+    font-weight: bold;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.category-hero-content p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    opacity: 0.92;
+    font-style: italic;
+    max-width: 640px;
+}
+
+.service-areas {
+    padding: 80px 0;
+    background: #faf5ff;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.area-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(192, 137, 196, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #EABE81;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(192, 137, 196, 0.16);
+    border-left-color: #C089C4;
+}
+
+.area-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #C089C4;
+    margin-bottom: 0.5rem;
+}
+
+.area-description {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.breadcrumb {
+    background: #faf5ff;
+    border-bottom: 1px solid #e9d8f5;
+    padding: 15px 0;
+    margin-top: 76px;
+}
+
+.breadcrumb-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-nav a {
+    color: #a06fa4;
+    text-decoration: none;
+}
+
+.breadcrumb-nav a:hover {
+    color: #b8860b;
+}
+
+.breadcrumb-nav span {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .category-hero {
+        min-height: 50vh;
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .area-card {
+        padding: 1rem;
+    }
+
+    .area-name {
+        font-size: 1rem;
+    }
+
+    .area-description {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+}
