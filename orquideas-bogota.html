@@ -783,6 +783,65 @@ src="https://www.facebook.com/tr?id=1442573450767869&ev=PageView&noscript=1"
         "openingHours": "Mo-Su 08:00-20:00"
     }
     </script>
+<!-- UB-PROMO-SEMANA:CSS -->
+<style>
+.ub-promo{background:#000;padding:60px 20px;font-family:'Georgia','Times New Roman',serif;color:#fff}
+.ub-promo *,.ub-flyer *{box-sizing:border-box}
+.ub-promo-inner{max-width:1200px;margin:0 auto}
+.ub-promo-head{text-align:center}
+.ub-promo-kicker{display:inline-block;background:#C089C4;color:#fff;font-family:Arial,sans-serif;font-size:.78rem;font-weight:bold;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:1rem}
+.ub-promo-title{color:#EABE81;font-family:'Georgia','Times New Roman',serif;font-size:clamp(2rem,5vw,3rem);font-weight:bold;line-height:1.15;margin:0 0 .6rem;text-align:center}
+.ub-promo-sub{font-style:italic;opacity:.9;margin:0 auto;max-width:640px;font-size:1.1rem;line-height:1.5}
+.ub-promo-line{width:100px;height:3px;background:linear-gradient(90deg,#C089C4,#EABE81);margin:1.4rem auto;border-radius:2px}
+.ub-countdown{display:flex;justify-content:center;gap:.75rem}
+.ub-countdown-box{min-width:72px;background:rgba(255,255,255,.06);border:1px solid rgba(234,190,129,.45);border-radius:12px;padding:.65rem .4rem;text-align:center}
+.ub-countdown-num{display:block;color:#EABE81;font-size:1.8rem;font-weight:bold;line-height:1;font-variant-numeric:tabular-nums}
+.ub-countdown-lbl{display:block;color:#fff;font-family:Arial,sans-serif;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;opacity:.8;margin-top:.35rem}
+.ub-countdown-note{font-family:Arial,sans-serif;font-size:.85rem;opacity:.75;margin:.75rem 0 0}
+.ub-promo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+.ub-promo-card{background:#fff;color:#333;border-radius:20px;overflow:hidden;position:relative;display:flex;flex-direction:column;box-shadow:0 15px 40px rgba(192,137,196,.25);transition:transform .3s ease}
+.ub-promo-card:hover{transform:translateY(-8px)}
+.ub-promo-img{aspect-ratio:1/1;overflow:hidden}
+.ub-promo-img img{width:100%;height:100%;object-fit:cover;display:block}
+.ub-promo-off{position:absolute;top:12px;left:12px;background:#C089C4;color:#fff;font-family:Arial,sans-serif;font-weight:bold;font-size:.9rem;padding:6px 10px;border-radius:8px}
+.ub-promo-tag{position:absolute;top:12px;right:12px;background:#000;color:#EABE81;font-family:Arial,sans-serif;font-size:.72rem;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:5px 10px;border-radius:6px}
+.ub-promo-body{padding:1.25rem;text-align:center;display:flex;flex-direction:column;flex:1}
+.ub-promo-name{color:#C089C4;font-family:'Georgia','Times New Roman',serif;font-size:1.35rem;font-weight:bold;margin:0 0 .5rem}
+.ub-promo-desc{font-size:.92rem;color:#666;line-height:1.5;margin:0 0 1rem;flex:1}
+.ub-promo-old{font-family:Arial,sans-serif;font-size:.95rem;color:#999;text-decoration:line-through}
+.ub-promo-new{color:#b8860b;font-size:1.7rem;font-weight:bold;margin:.15rem 0}
+.ub-promo-new small{font-size:.8rem;color:#666;font-weight:normal}
+.ub-promo-save{font-family:Arial,sans-serif;font-size:.82rem;color:#a06fa4;font-weight:bold;margin-bottom:1rem}
+.ub-promo-btn{width:100%;border:none;cursor:pointer;background:linear-gradient(135deg,#C089C4,#d4a6d8);color:#fff;font-family:'Georgia','Times New Roman',serif;font-weight:bold;font-size:.95rem;letter-spacing:.5px;text-transform:uppercase;padding:14px 10px;border-radius:12px;transition:all .3s ease}
+.ub-promo-btn:hover{background:linear-gradient(135deg,#d4a6d8,#C089C4);box-shadow:0 5px 15px rgba(192,137,196,.35)}
+.ub-promo-legal{text-align:center;font-family:Arial,sans-serif;font-size:.78rem;opacity:.6;margin:1.75rem 0 0}
+.ub-flyer{position:fixed;inset:0;z-index:100001;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.72);opacity:0;transition:opacity .35s ease}
+.ub-flyer.is-open{display:flex}
+.ub-flyer.is-visible{opacity:1}
+.ub-flyer-card{position:relative;width:100%;max-width:400px;max-height:calc(100vh - 32px);overflow:auto;background:#000;border:2px solid #EABE81;border-radius:22px;color:#fff;text-align:center;font-family:'Georgia','Times New Roman',serif;transform:translateY(20px) scale(.96);transition:transform .35s ease;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.ub-flyer.is-visible .ub-flyer-card{transform:none}
+.ub-flyer-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.6);color:#fff;font-size:22px;line-height:1;cursor:pointer;z-index:2}
+.ub-flyer-imgs{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);grid-template-rows:repeat(3,minmax(0,1fr));gap:3px;height:230px;overflow:hidden}
+.ub-flyer-imgs img{width:100%;height:100%;min-height:0;min-width:0;object-fit:cover;display:block}
+.ub-flyer-imgs img:first-child{grid-row:1/4}
+.ub-flyer-body{padding:1.2rem 1.2rem 1.4rem}
+.ub-flyer-body .ub-promo-kicker{margin-bottom:.6rem}
+.ub-flyer-title{color:#EABE81;font-size:1.7rem;font-weight:bold;line-height:1.15;margin:0 0 .4rem}
+.ub-flyer-text{font-size:1rem;line-height:1.45;margin:0 0 1rem;opacity:.95}
+.ub-flyer-text strong{color:#EABE81}
+.ub-flyer .ub-countdown{gap:.5rem}
+.ub-flyer .ub-countdown-box{min-width:60px;padding:.5rem .3rem}
+.ub-flyer .ub-countdown-num{font-size:1.4rem}
+.ub-flyer-cta{margin-top:1.1rem;width:100%;border:none;cursor:pointer;background:#EABE81;color:#000;font-family:'Georgia','Times New Roman',serif;font-weight:bold;font-size:1rem;text-transform:uppercase;letter-spacing:1px;padding:13px;border-radius:50px}
+.ub-flyer-cta:hover{background:#C089C4;color:#fff}
+.ub-flyer-bar{height:4px;background:linear-gradient(90deg,#C089C4,#EABE81);transform-origin:left;transform:scaleX(1)}
+.ub-flyer.is-visible .ub-flyer-bar{animation:ubFlyerBar 5s linear forwards}
+@keyframes ubFlyerBar{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+@media(max-width:1024px){.ub-promo-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.ub-promo{padding:45px 16px}.ub-promo-grid{grid-template-columns:1fr;gap:1.25rem}.ub-countdown{gap:.5rem}.ub-countdown-box{min-width:62px}.ub-countdown-num{font-size:1.5rem}.ub-flyer-imgs{height:190px}}
+@media(prefers-reduced-motion:reduce){.ub-flyer,.ub-flyer-card,.ub-promo-card{transition:none}}
+</style>
+<!-- /UB-PROMO-SEMANA:CSS -->
 </head>
 
 <body>
@@ -893,6 +952,81 @@ src="https://www.facebook.com/tr?id=1442573450767869&ev=PageView&noscript=1"
 </section>
 
 <!-- PRODUCTS SECTION -->
+<!-- UB-PROMO-SEMANA:SECTION -->
+<section class="ub-promo" id="promocion-semana">
+  <div class="ub-promo-inner">
+    <div class="ub-promo-head">
+      <span class="ub-promo-kicker">Promoción de la semana</span>
+      <h2 class="ub-promo-title">Arreglos en Promoción</h2>
+      <p class="ub-promo-sub">Una orquídea y tres arreglos con lirios a precio especial. Aprovecha antes de que termine el domingo.</p>
+      <div class="ub-promo-line"></div>
+      <div class="ub-countdown" aria-label="Tiempo restante de la promoción">
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="d">00</span><span class="ub-countdown-lbl">Días</span></div>
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="h">00</span><span class="ub-countdown-lbl">Horas</span></div>
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="m">00</span><span class="ub-countdown-lbl">Min</span></div>
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="s">00</span><span class="ub-countdown-lbl">Seg</span></div>
+        </div>
+      <p class="ub-countdown-note">La promoción termina el domingo a las 11:59 p. m.</p>
+    </div>
+    <div class="ub-promo-grid">
+      <article class="ub-promo-card">
+        <div class="ub-promo-img"><img src="unicas_fotos/45.webp" alt="Mini Elegancia en promoción - Únicas Boutique Floral Bogotá" loading="lazy"></div>
+        <span class="ub-promo-off">-23%</span>
+        <span class="ub-promo-tag">Orquídea</span>
+        <div class="ub-promo-body">
+          <h3 class="ub-promo-name">Mini Elegancia</h3>
+          <p class="ub-promo-desc">Orquídeas Phalaenopsis mini multiflora decorada con papel coreano y lazo de cinta. Incluye matera decorativa, tarjeta dedicatoria y manual de cuidados. Colores disponibles: blanca, fucsia, rosada, naranja, amarilla, matizada, etc.</p>
+          <div class="ub-promo-old">Antes $146.250</div>
+          <div class="ub-promo-new"><small>Ahora desde</small> $112.500</div>
+          <div class="ub-promo-save">Ahorras $33.750</div>
+          <button type="button" class="ub-promo-btn" onclick="return ubPromoWA('Mini Elegancia','ORQ-004','$112.500')">Pedir por WhatsApp</button>
+        </div>
+      </article>
+      <article class="ub-promo-card">
+        <div class="ub-promo-img"><img src="unicas_fotos/3.webp" alt="Realeza Natural en promoción - Únicas Boutique Floral Bogotá" loading="lazy"></div>
+        <span class="ub-promo-off">-23%</span>
+        <span class="ub-promo-tag">Lirios</span>
+        <div class="ub-promo-body">
+          <h3 class="ub-promo-name">Realeza Natural</h3>
+          <p class="ub-promo-desc">Diseñado con lirios, rosas mini y gran variedad de follajes acordes. Decorado con papel coreano y cinta satinada o interlón. Incluye tarjeta dedicatoria y tips de cuidados. Colores a elección.</p>
+          <div class="ub-promo-old">Antes $162.500</div>
+          <div class="ub-promo-new"><small>Ahora desde</small> $125.000</div>
+          <div class="ub-promo-save">Ahorras $37.500</div>
+          <button type="button" class="ub-promo-btn" onclick="return ubPromoWA('Realeza Natural','LIR-001','$125.000')">Pedir por WhatsApp</button>
+        </div>
+      </article>
+      <article class="ub-promo-card">
+        <div class="ub-promo-img"><img src="unicas_fotos/7.webp" alt="Sinfonía Floral en promoción - Únicas Boutique Floral Bogotá" loading="lazy"></div>
+        <span class="ub-promo-off">-23%</span>
+        <span class="ub-promo-tag">Lirios</span>
+        <div class="ub-promo-body">
+          <h3 class="ub-promo-name">Sinfonía Floral</h3>
+          <p class="ub-promo-desc">Bouquet flores mixtas con lirios. Decorado con papeles coreanos y lazo de cinta. Incluye tarjeta dedicatoria y manual de cuidados. Colores a elección.</p>
+          <div class="ub-promo-old">Antes $182.813</div>
+          <div class="ub-promo-new"><small>Ahora desde</small> $140.625</div>
+          <div class="ub-promo-save">Ahorras $42.188</div>
+          <button type="button" class="ub-promo-btn" onclick="return ubPromoWA('Sinfonía Floral','LIR-002','$140.625')">Pedir por WhatsApp</button>
+        </div>
+      </article>
+      <article class="ub-promo-card">
+        <div class="ub-promo-img"><img src="unicas_fotos/11.webp" alt="Pureza Radiante en promoción - Únicas Boutique Floral Bogotá" loading="lazy"></div>
+        <span class="ub-promo-off">-23%</span>
+        <span class="ub-promo-tag">Lirios</span>
+        <div class="ub-promo-body">
+          <h3 class="ub-promo-name">Pureza Radiante</h3>
+          <p class="ub-promo-desc">Hermoso bouquet con lirios y follajes acordes según el stock decorado con papeles coreanos y lazo de cinta. Colores a elección del cliente unicolor o variados.</p>
+          <div class="ub-promo-old">Antes $125.125</div>
+          <div class="ub-promo-new"><small>Ahora desde</small> $96.250</div>
+          <div class="ub-promo-save">Ahorras $28.875</div>
+          <button type="button" class="ub-promo-btn" onclick="return ubPromoWA('Pureza Radiante','LIR-003','$96.250')">Pedir por WhatsApp</button>
+        </div>
+      </article>
+    </div>
+    <p class="ub-promo-legal">Precios en pesos colombianos. Válido hasta el domingo a las 11:59 p. m. (hora de Bogotá).</p>
+  </div>
+</section>
+<!-- /UB-PROMO-SEMANA:SECTION -->
+
 <section class="products-section" id="productos">
     <div class="container">
         <div class="section-header">
@@ -3168,5 +3302,58 @@ console.log('🚚 Grupo 1: Envío y Domicilio - Optimizado para Conversión');
 })();
 </script>
 
+<!-- UB-PROMO-SEMANA:FLYER -->
+<div class="ub-flyer" id="ubFlyer" role="dialog" aria-modal="true" aria-label="Promoción de la semana">
+  <div class="ub-flyer-card">
+    <button type="button" class="ub-flyer-close" aria-label="Cerrar">&times;</button>
+    <div class="ub-flyer-imgs"><img src="unicas_fotos/45.webp" alt="Mini Elegancia"><img src="unicas_fotos/3.webp" alt="Realeza Natural"><img src="unicas_fotos/7.webp" alt="Sinfonía Floral"><img src="unicas_fotos/11.webp" alt="Pureza Radiante"></div>
+    <div class="ub-flyer-body">
+      <span class="ub-promo-kicker">Promoción de la semana</span>
+      <p class="ub-flyer-title">Arreglos en Promoción</p>
+      <p class="ub-flyer-text">Orquídea y arreglos con lirios con <strong>23% de descuento</strong>, desde $96.250</p>
+      <div class="ub-countdown" aria-label="Tiempo restante de la promoción">
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="d">00</span><span class="ub-countdown-lbl">Días</span></div>
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="h">00</span><span class="ub-countdown-lbl">Horas</span></div>
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="m">00</span><span class="ub-countdown-lbl">Min</span></div>
+          <div class="ub-countdown-box"><span class="ub-countdown-num" data-ub-cd="s">00</span><span class="ub-countdown-lbl">Seg</span></div>
+        </div>
+      <button type="button" class="ub-flyer-cta">Ver promociones</button>
+    </div>
+    <div class="ub-flyer-bar"></div>
+  </div>
+</div>
+<script>
+(function(){
+  var OFF=-5*3600*1000;
+  function endOfWeek(){var now=Date.now(),b=new Date(now+OFF),add=(7-b.getUTCDay())%7;return Date.UTC(b.getUTCFullYear(),b.getUTCMonth(),b.getUTCDate()+add,23,59,59)-OFF;}
+  function pad(n){return (n<10?'0':'')+n;}
+  function tick(){
+    var s=Math.max(0,Math.floor((endOfWeek()-Date.now())/1000));
+    var v={d:Math.floor(s/86400),h:Math.floor(s%86400/3600),m:Math.floor(s%3600/60),s:s%60};
+    var els=document.querySelectorAll('[data-ub-cd]');
+    for(var i=0;i<els.length;i++){els[i].textContent=pad(v[els[i].getAttribute('data-ub-cd')]);}
+  }
+  tick();setInterval(tick,1000);
+
+  window.ubPromoWA=function(name,code,price){
+    var msg='Hola, quiero aprovechar la promoción de la semana: '+name+' (Código: '+code+') desde '+price+'. ¿Está disponible?';
+    var url='https://wa.me/573227008625?text='+encodeURIComponent(msg),done=false;
+    function go(){if(!done){done=true;window.open(url,'_blank');}}
+    try{if(typeof gtag==='function'){gtag('event','conversion',{'send_to':'AW-17503274952/lA9PCODAu4wbEMiPm5pB','event_callback':go});setTimeout(go,800);}else{go();}}catch(e){go();}
+    return false;
+  };
+
+  var fl=document.getElementById('ubFlyer');if(!fl)return;
+  var timer;
+  function close(){clearTimeout(timer);fl.classList.remove('is-visible');setTimeout(function(){fl.classList.remove('is-open');},350);}
+  function open(){fl.classList.add('is-open');setTimeout(function(){fl.classList.add('is-visible');},30);timer=setTimeout(close,5000);}
+  fl.addEventListener('click',function(e){if(e.target===fl)close();});
+  fl.querySelector('.ub-flyer-close').addEventListener('click',close);
+  fl.querySelector('.ub-flyer-cta').addEventListener('click',function(){close();var s=document.getElementById('promocion-semana');if(s)s.scrollIntoView({behavior:'smooth',block:'start'});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  setTimeout(open,700);
+})();
+</script>
+<!-- /UB-PROMO-SEMANA:FLYER -->
 </body>
 </html>
